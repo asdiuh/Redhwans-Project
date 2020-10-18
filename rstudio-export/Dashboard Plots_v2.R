@@ -4,7 +4,6 @@
 # install.packages("extrafont")
 # install.packages("extrafontdb")
 # install.packages("stringr")
-rm(list = ls())
 library(stringr)
 library(extrafontdb)
 library(extrafont)
@@ -382,7 +381,7 @@ MovementDashboard <- function(MAssetClass, MPeriod, reporting_difference, Font) 
   
 }
 
-HistoricalDashboard(MAssetClass = 'MRTG', CuttingDimension = 'Stage', Font = 'Gentium', Month1 = '201904', Month2 = '202001')
+# HistoricalDashboard(AssetClass = 'MRTG', CuttingDimension = 'Stage', Font = 'Gentium', Month1 = '201904', Month2 = '202001')
 MovementDashboard(MAssetClass = 'MRTG', MPeriod = '201912 to 202001', reporting_difference = 1, Font = 'Gentium')
 
 
